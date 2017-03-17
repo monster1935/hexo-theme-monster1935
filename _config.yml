@@ -1,0 +1,28 @@
+menu:
+    首页: /
+    归档: /archives/
+    关于: /about/
+    微博: https://weibo.com/monster1935
+    GitHub: https://github.com/monster1935
+icon:
+    首页: icon-home
+    归档: icon-guidang
+    关于: icon-guanyu
+    微博: icon-weibo
+    GitHub: icon-github
+
+favicon: /favicon.jpg
+logo: /logo.jpg
+name: monster1935的博客
+
+# Comment
+# e.g disqus: seansun
+disqus:
+duoshuo: monster1935
+
+# Analytics
+# google-analytics:
+ga:
+
+# Copyright Infomation
+startyear: 2015

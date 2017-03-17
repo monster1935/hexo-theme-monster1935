@@ -1,0 +1,30 @@
+.archive {
+    margin: 5em auto;
+    .post-title{
+        margin: 0.65em 0;
+        color: #2c3e50;
+        font-size: 1.5em;
+    }
+    .post-item {
+        padding: 2px 0 0 50px;
+    }
+    .post-time,
+    .post-title-link {
+        font-size: 1rem;
+    }
+    .post-title-link {
+        display: block;
+        margin-left: 125px;
+        color: #42b983;
+        word-break: break-all;
+        &:hover {
+            border-bottom: 0;
+            color: #267B54;
+        }
+    }
+    .post-info {
+        float: left;
+        width: 125px;
+        color: #7f8c8d;
+    }
+}

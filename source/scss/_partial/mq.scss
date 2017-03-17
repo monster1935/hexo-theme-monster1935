@@ -1,0 +1,168 @@
+main.container {
+    margin: 2em 10px;
+}
+body{
+    transition: transform .2s cubic-bezier(.4,.01,.165,.99),-webkit-transform .2s cubic-bezier(.4,.01,.165,.99);
+}
+.side{
+    position: fixed;
+    transform: translate3d(300px,0,0);
+}
+/*start: header样式*/
+.header{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    z-index: 9;
+    background-color: #323232;
+    display: none;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+/*end: header样式*/
+
+/*start:sidebar侧边栏样式*/
+.sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #323232;
+    overflow: auto;
+    z-index: 1;
+}
+.profile{
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.profile a{
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 70px;
+}
+.profile span{
+    display: block;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #999;
+    text-align: center;
+}
+ul.nav.nav-list{
+    margin: 0 0 20px;
+}
+ul.nav.nav-list .nav-list-item{
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+}
+ul.nav.nav-list .nav-list-item a{
+    padding-left: 100px;
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+ul.nav.nav-list .nav-list-item a:hover,
+ul.nav.nav-list .nav-list-item a:active{
+    color: rgba(153,153,153,.8);
+}
+/*end:sidebar侧边栏样式*/
+
+/*start: 内容区样式*/
+.wrap{
+    max-width: 1390px;
+    padding-left: 340px;
+    padding-right: 40px;
+
+}
+/*end: 内容区样式*/
+
+/*start: 屏幕适配，769-1024px*/
+@media screen and (max-width: 1024px) and (min-width:769px){
+    .sidebar{
+        width: 75px;
+        .profile{
+            padding-top: 20px;
+            a,a img{
+                width: 40px;
+                height: 40px;
+                border-radius: 40px;
+            }
+            span{
+                display: none;
+            }
+        }
+        .nav.nav-list .nav-list-item{
+            a{
+                padding: 25px;
+                i{
+                    font-size: 18px;
+                    display: block;
+                    margin: 0 auto;
+                }
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+    .wrap{
+        padding-left: 115px;
+    }
+
+}
+/*end: 屏幕适配，769-1024px*/
+
+/*start: 屏幕适配，maxWidth:768px*/
+@media screen and (max-width: 769px){
+    .sidebar{
+        display: none;
+        transform: translate3D(-300px,0,0)
+    }
+    .wrap{
+        width: 100%;
+        min-height: 100%;
+        padding: 50px 10px 10px 0;
+    }
+    .header{
+        display: block;
+        a.btn-more{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 10px;
+            top: 0px;
+            color: #999;
+        }
+        h1{
+            text-align: center;
+            font-size: 16px;
+            margin: 0;
+            a{
+                color: #999;
+            }
+        }
+
+        a.logo-link,
+        a.logo-link img{
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+        a.logo-link{
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+
+    }
+}
+/*end: 屏幕适配，maxWidth:768px*/

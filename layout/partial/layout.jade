@@ -1,0 +1,25 @@
+doctype
+html(lang=config.language)
+    head
+        include head
+    body
+        .sidebar
+            .profile
+                a.logo-link(href=url_for())
+                    img(src=url_for(theme.logo) alt="logo")
+                span !{theme.name}
+            include nav
+        div.header
+            a.btn-more
+                i.iconfont.icon-more
+            h1
+                a.home(href="/") monster1935的博客
+            a.logo-link(href="/about")
+                img(src=url_for(theme.logo) alt="logo")
+        .wrap
+            main.container
+                block container
+            footer
+                block pagination
+                block copyright
+        include scripts
