@@ -4,6 +4,7 @@ html(lang=config.language)
         include head
     body
         .sidebar
+            div.overlay
             .profile
                 a.logo-link(href=url_for())
                     img(src=url_for(theme.logo) alt="logo")
