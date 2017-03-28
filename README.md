@@ -4,7 +4,7 @@
 ## 在线地址
 [monster1935的博客](http://www.monster1935.site)
 
-![](http://oe7c74ud3.bkt.clouddn.com/theme.png)
+![](http://oe7c74ud3.bkt.clouddn.com/blog.png)
 
 ## 使用
 - `cd blog/themes` 进入博客工程下的themes文件夹，执行`git clone`命令
