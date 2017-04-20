@@ -2,11 +2,13 @@ menu:
     首页: /
     归档: /archives/
     关于: /about/
+    实验室: /lab/
     微博: https://weibo.com/monster1935
     GitHub: https://github.com/monster1935
 icon:
     首页: icon-home
     归档: icon-guidang
+    实验室: icon-project
     关于: icon-guanyu
     微博: icon-weibo
     GitHub: icon-github
@@ -18,7 +20,7 @@ name: monster1935的博客
 # Comment
 # e.g disqus: seansun
 disqus:
-duoshuo: monster1935
+duoshuo: 
 
 # Analytics
 # google-analytics:

@@ -46,7 +46,7 @@ mixin post(item)
     .post
         article.post-block
             h1.post-title
-                != item.title
+                != item.title || '实验室'
             +postInfo(item)
             .post-content
                 != item.content
