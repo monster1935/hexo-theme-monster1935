@@ -48,6 +48,28 @@ body{
 /**
  * lab样式end
  */
+
+// 滚动条样式覆盖start
+::-webkit-scrollbar {
+  width:12px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow:inset006pxrgba(0,0,0,0.3);
+  border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius:10px;
+  background:rgba(0,0,0,0.1);
+  -webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background:rgba(255,0,0,0.4);
+}
+// 滚动条样式覆盖end
+
+
 .side{
     position: fixed;
     transform: translate3d(300px,0,0);

@@ -38,15 +38,42 @@ mixin postList()
         - })
 
 //- About Page
-mixin about()
-    p hello
+mixin about(item)
+    .post
+        article.post-block
+            h1.post-title
+                != item.title
+            .post-content
+                != item.content
 
+//- Lab Page
+mixin lab(item)
+    .post
+        article.post-block
+            h1.post-title
+                != item.title
+            .post-content
+                div.lab
+                    div.lab-box
+                        - config.projects.forEach(function(item, index) {
+                            div.lab-box-block
+                                a(href=url_for(item.link))
+                                    img(src=item.imgPath)
+                                div.lab-block-content
+                                    div.lab-block-title
+                                        a(href=url_for(item.link))
+                                            != item.title
+                                    div.lab-block-desp
+                                        != item.description
+
+                        - })
+            
 //- Post Page
 mixin post(item)
     .post
         article.post-block
             h1.post-title
-                != item.title || '实验室'
+                != item.title
             +postInfo(item)
             .post-content
                 != item.content
