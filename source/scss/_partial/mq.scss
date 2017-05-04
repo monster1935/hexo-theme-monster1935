@@ -5,12 +5,17 @@ body{
     transition: transform .2s cubic-bezier(.4,.01,.165,.99),-webkit-transform .2s cubic-bezier(.4,.01,.165,.99);
 }
 /*网易云跟帖sumit按钮样式覆盖*/
-.yun-tie-sdk-wrap .input-box .tie-submit-row .tie-sbumit-btn {
-    background-clor: #4fc08d
+#yun-tie-sdk-wrap .input-box .tie-submit-row .tie-submit-btn  {
+    background-color: #4fc08d !important;
 }
-.yun-tie-sdk-wrap .input-box .tie-submit-row .tie-sbumit-btn:hover {
-    background-color: #22bd77
+#yun-tie-sdk-wrap .input-box .tie-submit-row .tie-submit-btn:hover {
+    background-color: #22bd77 !important;
 }
+#yun-tie-sdk-wrap .tie-tab-bar li.z-fcs span,
+#yun-tie-sdk-wrap .tie-title-bar .active-wrap .tie-actCount {
+    color: #4fc08d !important;
+}
+
 
 /**
  * lab样式start
