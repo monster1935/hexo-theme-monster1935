@@ -21,6 +21,7 @@ name: monster1935的博客
 # e.g disqus: seansun
 disqus:
 duoshuo:
+netease: true
 
 # Analytics
 # google-analytics:

@@ -4,6 +4,14 @@ main.container {
 body{
     transition: transform .2s cubic-bezier(.4,.01,.165,.99),-webkit-transform .2s cubic-bezier(.4,.01,.165,.99);
 }
+/*网易云跟帖sumit按钮样式覆盖*/
+.yun-tie-sdk-wrap .input-box .tie-submit-row .tie-sbumit-btn {
+    background-clor: #4fc08d
+}
+.yun-tie-sdk-wrap .input-box .tie-submit-row .tie-sbumit-btn:hover {
+    background-color: #22bd77
+}
+
 /**
  * lab样式start
  */
